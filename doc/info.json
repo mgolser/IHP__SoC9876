@@ -5,18 +5,27 @@
   "unique_id": "9876",
   "license": "Apache-2.0",
   "trl": 0,
-  "sealring_x": 1.0,
-  "sealring_y": 1.0,
-  "repository": "",
-  "pdk_version": "",
-  "process": "SG13CMOS",
-  "dependencies": {},
-  "tools": {},
+  "sealring_x": 3657.0,
+  "sealring_y": 4292.0,
+  "repository": "https://github.com/mgolser/IHP__SoC9876",
+  "pdk_version": "a49358cc0b20635fcb53c0940505e3563763fc7a",
+  "process": "SG13CMOS5L",
+  "dependencies": {
+    "sg13cmos5l_io": {"source": "IHP-Open-PDK ihp-sg13cmos5l libs.ref/sg13cmos5l_io", "license": "Apache-2.0", "dependencies": {}},
+    "sg13cmos5l_stdcell": {"source": "IHP-Open-PDK ihp-sg13cmos5l libs.ref/sg13cmos5l_stdcell", "license": "Apache-2.0", "dependencies": {}}
+  },
+  "tools": {
+    "iic-osic-tools": "2026.10",
+    "klayout": "0.30.12",
+    "magic": "8.3.685",
+    "ngspice": "47",
+    "xschem": "3.4.8RC"
+  },
   "top_cell_name": "SoC9876",
   "release": {
     "version": "v.1.0.0",
-    "gds": "release/v.1.0.0/gds",
-    "netlist": "release/v.1.0.0/netlist",
+    "gds": "release/v.1.0.0/gds/SoC9876.gds.gz",
+    "netlist": "",
     "doc": "release/v.1.0.0/doc"
   }
 }

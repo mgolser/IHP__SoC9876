@@ -1,0 +1,4 @@
+python3 run_drc.py --path=SoC9876.gds.gz --topcell=SoC9876 --precheck_drc --no_offgrid --no_angle --disable_extra_rules --no_recommended --mp=2 --density_thr=1
+input SHA-256 26a35fc2c0930d10c57ed019fe13beb40c0a023fc34794a29e0a6c66c46e9128
+KLayout 0.30.12, ihp-sg13cmos5l a49358cc0b20635fcb53c0940505e3563763fc7a
+result: 0 violations, 29 tables completed, density table included
