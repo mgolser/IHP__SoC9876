@@ -1,7 +1,23 @@
 # SoC9876
 
-Single-technology IP library.
+Mixed-signal test chip in IHP SG13CMOS5L (130 nm CMOS), die 3657 x 4292 um, designed with open-source tools.
 
-- doc/     : user documentation
-- dependencies/ : sub-cells and blocks
-- release/v.1.0.0 : immutable versioned deliveries
+![SoC9876 layout without metal fill](SoC9876_black.png)
+
+## Contents
+
+- Digital core with SPI slave and register map: 16 direct digital synthesis (DDS) sine generators (32-bit phase accumulator, CORDIC) at 50 MHz, one per channel, and a control bus to the analog blocks.
+- 16 analog channels, each with an 8-bit current-steering DAC, a trimmable active low-pass filter and a programmable gain stage.
+- 16-input analog multiplier tree with a bandgap reference.
+- Two 12-bit SAR ADCs with input multiplexers and measurement buffers for on-chip observation of internal nodes.
+- Trimmable reference current generators.
+- Test structures: a digitally controlled oscillator in a PLL clock multiplier and a stand-alone OTA.
+- On-chip decoupling capacitors, per-domain ESD clamps and an IHP IO pad ring.
+
+## Repository
+
+- `release/v.1.0.0/gds/SoC9876.gds.gz`: release GDS (single top cell `SoC9876`, seal ring and metal fill included)
+- `release/v.1.0.0/doc/`: IHP precheck result and DRC database
+- `doc/info.json`: submission metadata
+
+Design sources and netlists are not published.
