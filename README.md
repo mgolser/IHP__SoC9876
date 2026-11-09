@@ -17,5 +17,7 @@ Mixed-signal test chip in IHP SG13CMOS5L (130 nm CMOS), die 3657 x 4292 um, desi
 ## Repository
 
 - `release/v.1.0.0/gds/SoC9876.gds.gz`: release GDS (single top cell `SoC9876`, seal ring and metal fill included)
-- `release/v.1.0.0/doc/`: IHP precheck result and DRC database
+- `release/v.1.0.0/netlist/SoC9876.cdl.gz`: full-chip CDL at transistor level, top `.SUBCKT SoC9876`
+- `release/v.1.0.0/doc/`: IHP precheck result, minimum DRC database and LVS report
+- `doc/Datasheet.md`, `doc/Specification.md`: pinout, supplies, limits, power-up, board rules and interface, key figures per block
 - `doc/info.json`: submission metadata

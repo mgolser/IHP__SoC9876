@@ -1,0 +1,29 @@
+SoC9876 full-chip LVS, result lines of the three modes
+KLayout 0.30.12, IIC-OSIC-TOOLS 2026.10, ihp-sg13cmos5l a49358cc0b20635fcb53c0940505e3563763fc7a, runs 2026-11-07 23:49 to 2026-11-08 00:11 +0100
+Chip CDL chip_top_full.cdl: 244 .SUBCKT, 5038 device lines, 243 called cells, sha256 381028436d580f341f7e5d34f2259944adcc87a490693ddd99be67686d02c7d0
+
+== mode 1: full transistor level
+ABSTRACT 0 blocks (placeholders without devices): [], of these with pins []
+Devices to compare: layout=68502 schematic=4768 (schematic counted before alignment, both per circuit definition)
+INFO : Congratulations! Netlists match.
+| Status           | PASS                                                         |
+| Outcome          | Comparison mode: PASS (netlists match).                      |
+LVS full chip_top (chip_top.gds.gz): Exit 0, 'Netlists match' 1, 'don't match' 0
+RESULT: MATCH
+
+== mode 2: full transistor level, border labels only
+ABSTRACT 0 blocks (placeholders without devices): [], of these with pins []
+Devices to compare: layout=68502 schematic=4768 (schematic counted before alignment, both per circuit definition)
+INFO : Congratulations! Netlists match.
+| Status           | PASS                                                         |
+| Outcome          | Comparison mode: PASS (netlists match).                      |
+LVS full chip_top (chip_top.gds.gz, border labels only): Exit 0, 'Netlists match' 1, 'don't match' 0
+RESULT: MATCH
+
+== mode 3: pad ring and analog blocks as pin abstracts, digital blocks full
+Devices to compare: layout=10285 schematic=484 (schematic counted before alignment, both per circuit definition)
+INFO : Congratulations! Netlists match.
+| Status           | PASS                                                         |
+| Outcome          | Comparison mode: PASS (netlists match).                      |
+LVS chip_top (chip_top.gds.gz, IO abstract, macros full): Exit 0, 'Netlists match' 1, 'don't match' 0
+RESULT: MATCH
